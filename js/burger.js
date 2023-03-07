@@ -7,6 +7,7 @@ const header2 = document.querySelector('.header');
 burger.addEventListener('click', () => {
     burger.classList.toggle('burger-active');
     list.classList.toggle('list-active');
+    header.classList.toggle('scrolled')
     body.classList.toggle('scroll_off');
     html2.classList.toggle('scroll_off');
 });
