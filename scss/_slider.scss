@@ -1,0 +1,22 @@
+.slider__container {
+    position: relative;
+    height: 650px;
+    width: 430px;
+    margin: 0px;
+}
+
+
+.mySlide {
+    position: absolute;
+    top: 0;
+    right: -25%;
+    transform: translateX(25%);
+    height: 100%;
+    width: 500px;
+
+    img {
+        height: 100%;
+        width: 100%;
+        object-fit: contain;
+    }
+}

@@ -1,0 +1,34 @@
+@import 'vars';
+@import 'hover';
+@import 'animations';
+@import 'header';
+@import 'buttons';
+@import 'slider';
+@import 'general';
+@import 'hero';
+@import 'new';
+@import 'card';
+@import 'adv';
+@import 'team';
+@import 'footer';
+@import 'burger';
+
+
+* {
+    font-family: Raleway;
+}
+
+.slide {
+    animation: slide 1s forwards;
+}
+
+.fade {
+    animation: fade 1s forwards;
+}
+
+.down {
+    animation: down .7s forwards;
+}
+
+
+@import 'adaptive';

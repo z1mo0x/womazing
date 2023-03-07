@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WOOMAZING</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="header__wrapper container flex justify-between items-center">
+            <div class="header__logo"><img src="img/header/logo.png" alt=""> <img src="img/header/Womazing.png" alt="">
+            </div>
+            <div class="header__burger hidden">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul class="header__burger-list hidden">
+                <li><a href="">Главная</a></li>
+                <li><a href="">Магазин</a></li>
+                <li><a href="">О бренде</a></li>
+                <li><a href="">Контакты</a></li>
+            </ul>
+            <ul class="header__list">
+                <li><a href="" class="active">Главная</a></li>
+                <li><a href="">Магазин</a></li>
+                <li><a href="">О бренде</a></li>
+                <li><a href="">Контакты</a></li>
+            </ul>
+            <div class="header__phone"><a href="">
+                    <img src="img/header/phone.svg" alt="">
+                </a>
+                +7 (495) 823-54-12</div>
+            <div class="header__cart"><a href=""><img src="img/header/cart.svg" alt=""></a></div>
+        </div>
+    </header>
+    <section class="hero">
+        <div class="hero__brown"></div>
+        <div class="hero__wrapper container flex">
+            <div class="hero__block w-1/2">
+                <h2 class="hero__title">Новые поступления
+                    в этом сезоне</h2>
+                <div class="hero__descr">
+                    Утонченные сочетания и бархатные оттенки - вот то, что вы искали в этом сезоне. Время исследовать.
+                </div>
+                <div class="hero__buttons">
+                    <button class="button-arrow button hero__button">
+                        <img src="img/header/button_arrow.svg" alt="">
+                    </button>
+                    <button class="button hero__button">Открыть магазин</button>
+                </div>
+                <div class="hero__dots">
+                    <span onclick="currentSlide(1)"></span>
+                    <span onclick="currentSlide(2)" class="active_dot"></span>
+                    <span onclick="currentSlide(3)"></span>
+                </div>
+            </div>
+            <div class="hero__slider w-1/2">
+                <div class="slider__container">
+                    <img class="hero__left" src="img/header/photo_1.png" alt="">
+                    <img class="hero__right" src="img/header/photo_3.png" alt="">
+                    <div class="mySlide">
+                        <img src="img/header/slide1.jpg" alt="">
+                    </div>
+                    <div class="mySlide">
+                        <img src="img/header/photo_2.png" alt="">
+                    </div>
+                    <div class="mySlide">
+                        <img src="img/header/slide3.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <main>
+        <section class="new">
+            <div class="container">
+                <div class="new__title title">Новая коллекция</div>
+                <div class="new__cards w-full flex">
+                    <div class="w-1/3 new__card card">
+                        <div class="card__image">
+                            <img src="img/new/product_1.png" alt="">
+                        </div>
+                        <div class="card__title">Футболка USA</div>
+                        <div class="card__prices">
+                            <div class="card__oldprice">$229</div>
+                            <div class="card__price">$129</div>
+                        </div>
+
+                    </div>
+                    <div class="w-1/3 new__card card">
+                        <div class="card__image">
+                            <img src="img/new/product_2.png" alt="">
+                        </div>
+                        <div class="card__title">Купальник Glow</div>
+                        <div class="card__prices">
+                            <div class="card__price">$129</div>
+                        </div>
+                    </div>
+                    <div class="w-1/3 new__card card">
+                        <div class="card__image">
+                            <img class="!block" src="img/new/proruct.png" alt="">
+                        </div>
+                        <div class="card__title">Свитшот Sweet Shot</div>
+                        <div class="card__prices">
+                            <div class="card__price">$129</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="new__buttons">
+                    <button class="button button-transparent">
+                        Открыть магазин
+                    </button>
+                </div>
+            </div>
+        </section>
+        <section class="adv">
+            <div class="container">
+                <div class="adv__title title">Что для нас важно</div>
+                <div class="adv__cards">
+                    <div class="adv__card">
+                        <div class="adv__card-image">
+                            <img class="block" src="img/adv/quality.png" alt="">
+                        </div>
+                        <div class="adv__card-title">Качество</div>
+                        <div class="adv__card-descr">
+                            Наши профессионалы работают на лучшем оборудовании для пошива одежды беспрецедентного
+                            качества
+                        </div>
+                    </div>
+                    <div class="adv__card">
+                        <div class="adv__card-image">
+                            <img class="block" src="img/adv/settings.png" alt="">
+                        </div>
+                        <div class="adv__card-title">Скорость</div>
+                        <div class="adv__card-descr">
+                            Благодаря отлаженной системе в Womazing мы можем отшивать до 20-ти единиц продукции в наших
+                            собственных цехах</div>
+                    </div>
+                    <div class="adv__card">
+                        <div class="adv__card-image">
+                            <img src="img/adv/hand.png" alt="">
+                        </div>
+                        <div class="adv__card-title">Ответственность</div>
+                        <div class="adv__card-descr">
+                            Мы заботимся о людях и планете. Безотходное производство и комфортные условия труда - все
+                            это Womazing</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="team">
+            <div class="container">
+                <div class="team__title title">Команда мечты Womazing</div>
+                <div class="team__wrapper flex justify-between flex-wrap">
+                    <div class="team__slider w-3/4">
+
+                        <div class="slider__container-2">
+                            <div class="team__dots">
+                                <span onclick="currentSlide2(1)"></span>
+                                <span onclick="currentSlide2(2)"></span>
+                                <span onclick="currentSlide2(3)"></span>
+                            </div>
+                            <div class="mySlide-2">
+                                <img src="img/team/slide1.png" alt="">
+                            </div>
+                            <div class="mySlide-2">
+                                <img src="img/team/slide2.png" alt="">
+                            </div>
+                            <div class="mySlide-2">
+                                <img src="img/team/slide3.png" alt="">
+                            </div>
+                            <div class="next" onclick="plusSlide(1)">
+                                <img src="img/team/Vector 2.png" alt="">
+                            </div>
+                            <div class="prev" onclick="plusSlide(-1)">
+                                <img src="img/team/Vector 2.png" alt="">
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="team__block w1/4">
+                        <div class="team__block-title">Для каждой</div>
+                        <div class="team__block-text">
+                            Каждая девушка уникальна. Однако, мы схожи в миллионе мелочей.
+                            <br><br>
+                            Womazing ищет эти мелочи и создает прекрасные вещи, которые выгодно подчеркивают достоинства
+                            каждой девушки.
+                        </div>
+                        <a href="" class="team__block-link">
+                            Подробнее о бренде
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="container footer__wrapper">
+            <div class="footer__politics">
+                <div class="footer__logo flex items-center ">
+                    <img src="img/header/logo.png" alt="">
+                    <img class="ml-4" src="img/header/Womazing.png" alt="">
+                </div>
+                <div class="footer__rules">
+                    <div class="footer__copyright"><a href=""> © Все права защищены</a></div>
+                    <div class="footer__confidential"><a href=""> Политика конфиденциальности</a></div>
+                    <div class="footer__public"><a href="">Публичная оферта</a></div>
+                </div>
+
+            </div>
+            <nav class="footer__nav">
+                <ul class="footer__header">
+                    <li><a href="" class="active">Главная</a></li>
+                    <li><a href="">Магазин</a>
+                        <ul class="footer__categories">
+                            <li><a href="">Пальто</a></li>
+                            <li><a href="">Свитшоты</a></li>
+                            <li><a href="">Кардиганы</a></li>
+                            <li><a href="">Толстовки</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="">О бренде</a></li>
+                    <li><a href="">Контакты</a></li>
+
+
+                </ul>
+            </nav>
+            <div class="footer__info">
+                <div class="footer__phone">+7 (495) 823-54-12</div>
+                <div class="footer__email">hello@womazing.com</div>
+                <div class="footer__socials">
+                    <a href=""> <img class="footer__social" src="img/footer/inst.png"></a>
+                    <a href=""><img class="footer__social" src="img/footer/face.png"></a>
+                    <a href=""><img class="footer__social" src="img/footer/twitter.png"></a>
+                </div>
+                <a href=""><img class="footer__visa" src="img/footer/visa.png"></a>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="js/slider.js"></script>
+    <script src="js/slider-2.js"></script>
+    <script src="js/header.js"></script>
+    <script src="js/burger.js"></script>
+</body>
+
+</html>

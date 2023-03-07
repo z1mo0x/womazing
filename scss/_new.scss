@@ -1,0 +1,16 @@
+.new {
+    margin-top: 130px;
+
+
+    &__cards {
+        margin-top: 80px;
+        justify-content: space-between;
+    }
+
+    &__buttons {
+        display: flex;
+        justify-content: center;
+        margin-top: 50px;
+    }
+
+}

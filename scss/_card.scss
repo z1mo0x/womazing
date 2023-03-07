@@ -1,0 +1,78 @@
+.card {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: 350px;
+
+    &__title {
+        font-size: 20px;
+        font-weight: 500;
+        margin-top: 25px;
+    }
+
+    &__prices {
+        display: flex;
+        font-size: 15px;
+        font-weight: 500;
+        text-align: left;
+        color: $second-accent;
+        margin-top: 5px;
+    }
+
+    &__oldprice {
+        text-decoration: line-through;
+    }
+
+    &__price {
+        margin-left: 10px;
+    }
+
+    &__image {
+        position: relative;
+        cursor: pointer;
+
+        &:hover::before {
+            opacity: .7;
+            transition: all .5s ease;
+
+        }
+
+        &:hover::after {
+            opacity: 1;
+            transition: all .5s ease;
+            left: 50%;
+            display: block;
+            transform: rotate(270deg) translateX(-50%) translateY(-40%);
+        }
+
+        &::before {
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background: $accent;
+            top: 0;
+            left: 0;
+            opacity: 0;
+            transition: all .5s ease;
+        }
+
+        &::after {
+            content: url(../img/header/button_arrow.svg);
+            position: absolute;
+            top: 40%;
+            left: -10%;
+            width: 30px;
+            height: 30px;
+            z-index: 100;
+            opacity: 0;
+            pointer-events: none;
+            transition: all .5s ease;
+            transform: rotate(270deg) translateX(-50%) translateY(-40%);
+            filter: invert(1) brightness(5);
+        }
+    }
+
+
+}
