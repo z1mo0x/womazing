@@ -592,13 +592,16 @@
 @media (max-width:578px) {
 
     .slider__container {
-        width: 200px;
+        width: 250px;
         height: 350px;
+        margin: 0 auto;
     }
 
     .mySlide {
         width: 250px;
-
+        height: 100%;
+        transform: none;
+        margin: 0 auto;
     }
 
     .header__burger {
@@ -619,6 +622,7 @@
 
         &__slider {
             margin-top: 0px;
+            margin: 0 auto;
         }
 
         &__title {
