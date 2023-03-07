@@ -4,6 +4,8 @@ body {
 
 .scroll_off {
     overflow-y: hidden;
+    overflow-x: hidden;
+    -webkit-overflow-scrolling: hidden;
 }
 
 .header {
