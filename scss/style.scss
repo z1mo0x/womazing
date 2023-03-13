@@ -13,9 +13,18 @@
 @import 'footer';
 @import 'burger';
 
+//Хз почему, но если не так, то происходит пиздец с адаптивом)
 
+@import '../adaptive/adaptive_index';
+@import '../adaptive/adaptive_shop';
+@import 'shop';
+@import 'one_item';
+@import 'colors';
+@import '../adaptive/adaptive_item';
 
 * {
+
+
     font-family: Raleway;
 }
 
@@ -30,7 +39,3 @@
 .down {
     animation: down .7s forwards;
 }
-
-
-@import '../adaptive/adaptive_index';
-@import 'shop';

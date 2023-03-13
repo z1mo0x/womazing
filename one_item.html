@@ -45,26 +45,65 @@
     </header>
 
     <main>
-        <section class="shop">
+        <section class="product">
             <div class="container">
-                <div class="shop__title title">Магазин</div>
-                <ul class="shop__breadcrumbs breadcrumbs">
-                    <li><a href="">Главная</a> </li>
-                    <li><a href="" class="bread-active"> Магазин</a></li>
+                <div class="product__title title">Свитшот Sweet Shot</div>
+                <ul class="product__breadcrumps breadcrumbs">
+                    <li><a href="">Главная</a></li>
+                    <li><a href="">Свитшоты</a></li>
+                    <li><a href="">Свитшот Sweet Shot</a></li>
                 </ul>
-                <div class="shop__categories">
-                    <button class="shop__button button-categories active-categories">Все</button>
-                    <button class="shop__button button-categories">Футболка</button>
-                    <button class="shop__button button-categories">Свитшоты</button>
-                    <button class="shop__button button-categories">Купальники</button>
-                    <button class="shop__button button-categories">Толстовки</button>
+                <div class="product__block flex justify-start">
+                    <div class="product__image w-1/3">
+                        <img src="img/new/proruct.png" alt="">
+                    </div>
+                    <div class="product__settings w-1/3">
+                        <div class="product__prices">
+                            <div class="product__price">$311</div>
+                            <div class="product__oldprice">$450</div>
+                        </div>
+                        <div class="product__size">Выберите размер
+                            <div class="product__sizes">
+                                <button class="button-categories product__button" value="S">
+                                    S
+                                </button>
+                                <button value="M" class="button-categories active-categories product__button">
+                                    M
+                                </button>
+                                <button value="L" class="button-categories product__button">
+                                    L
+                                </button>
+                                <button value="XL" class="button-categories product__button">
+                                    XL
+                                </button>
+                                <button value="XXL" class="button-categories product__button">
+                                    XXL
+                                </button>
+                            </div>
+                        </div>
+                        <div class="product__color">Выберите цвет
+                            <div class="product__colors">
+                                <button value="brown" class="button-color"></button>
+                                <button value="grey" class="button-color color-active grey"></button>
+                                <button value="pink" class="button-color pink"></button>
+                                <button value="sand" class="button-color sand"></button>
+                            </div>
+                        </div>
+                        <div class="product__cart">
+                            <div class="product__count">
+                                <input type="number" max="5" min="1" value="1">
+                            </div>
+                            <div class="button button-cart">Добавить в корзину</div>
+                        </div>
+                    </div>
                 </div>
-                <div class="shop__shown">Показано: <span class="shop__value">9</span> из 12 товаров</div>
-                <div class="shop__cards w-full flex justify-between flex-wrap">
-                    <p class="shop__notfound text-center hidden text-red-600 text-6xl mt-14 sm:text-2xl">По вашему
-                        запросу ничего не
-                        найдено :(</p>
-                    <div class="w-1/3 shop__card card">
+            </div>
+        </section>
+        <section class="same">
+            <div class="container">
+                <div class="same__title title">Связанные товары</div>
+                <div class="same__cards flex justify-start">
+                    <div class="w-1/3 same__card card">
                         <div class="card__image">
                             <img src="img/new/product_1.png" alt="">
                         </div>
@@ -73,98 +112,21 @@
                             <div class="card__oldprice">$229</div>
                             <div class="card__price">$129</div>
                         </div>
-                    </div>
-                    <div class="w-1/3 shop__card card">
-                        <div class="card__image">
-                            <img src="img/new/product_2.png" alt="">
-                        </div>
-                        <div class="card__title">Купальник Glow</div>
-                        <div class="card__prices">
-                            <div class="card__price">$129</div>
-                        </div>
-                    </div>
-                    <div class="w-1/3 shop__card card">
-                        <div class="card__image">
-                            <img class="" src="img/new/proruct.png" alt="">
-                        </div>
-                        <div class="card__title">Свитшот Sweet Shot</div>
-                        <div class="card__prices">
-                            <div class="card__price">$129</div>
-                        </div>
-                    </div>
-                    <div class="w-1/3 shop__card card">
-                        <div class="card__image">
-                            <img src="img/new/product_1.png" alt="">
-                        </div>
-                        <div class="card__title">Футболка USA</div>
-                        <div class="card__prices">
-                            <div class="card__oldprice">$229</div>
-                            <div class="card__price">$129</div>
-                        </div>
-                    </div>
-                    <div class="w-1/3 shop__card card">
-                        <div class="card__image">
-                            <img src="img/new/product_2.png" alt="">
-                        </div>
-                        <div class="card__title">Купальник Glow</div>
-                        <div class="card__prices">
-                            <div class="card__price">$129</div>
-                        </div>
-                    </div>
-                    <div class="w-1/3 shop__card card">
-                        <div class="card__image">
-                            <img class="" src="img/new/proruct.png" alt="">
-                        </div>
-                        <div class="card__title">Свитшот Sweet Shot</div>
-                        <div class="card__prices">
-                            <div class="card__price">$129</div>
-                        </div>
-                    </div>
-                    <div class="w-1/3 shop__card card">
-                        <div class="card__image">
-                            <img src="img/new/product_1.png" alt="">
-                        </div>
-                        <div class="card__title">Футболка USA</div>
-                        <div class="card__prices">
-                            <div class="card__oldprice">$229</div>
-                            <div class="card__price">$129</div>
-                        </div>
-                    </div>
-                    <div class="w-1/3 shop__card card">
-                        <div class="card__image">
-                            <img src="img/new/product_2.png" alt="">
-                        </div>
-                        <div class="card__title">Купальник Glow</div>
-                        <div class="card__prices">
-                            <div class="card__price">$129</div>
-                        </div>
-                    </div>
-                    <div class="w-1/3 shop__card card">
-                        <div class="card__image">
-                            <img class="" src="img/new/proruct.png" alt="">
-                        </div>
-                        <div class="card__title">Свитшот Sweet Shot</div>
-                        <div class="card__prices">
-                            <div class="card__price">$129</div>
-                        </div>
-                    </div>
-                    <div class="shop__shown">Показано: <span class="shop__value">9</span> из 12 товаров</div>
-                </div>
-                <ul class="shop__pagination">
-                    <div class="pagination-prev">
-                        <img src="img/shop/arrow-pag.svg" alt="">
-                    </div>
-                    <li class="pagination-active">1</li>
-                    <li>2</li>
-                    <div class="pagination-next">
-                        <img src="img/shop/arrow-pag.svg" alt="">
-                    </div>
 
-                </ul>
+                    </div>
+                    <div class="w-1/3 same__card card">
+                        <div class="card__image">
+                            <img src="img/new/product_2.png" alt="">
+                        </div>
+                        <div class="card__title">Купальник Glow</div>
+                        <div class="card__prices">
+                            <div class="card__price">$129</div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
     </main>
-
 
 
 
@@ -214,8 +176,8 @@
 
 
     <script src="js/header.js"></script>
-    <script src="js/tabs.js"></script>
     <script src="js/burger.js"></script>
+    <script src="js/oneItem.js"></script>
 </body>
 
 </html>

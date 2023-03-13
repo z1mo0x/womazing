@@ -1,8 +1,9 @@
 const buttonsShop = document.querySelectorAll('.shop__button');
-let cards = document.querySelectorAll('.shop__card')
-let cardsTitle = document.querySelectorAll('.card__title')
+const cards = document.querySelectorAll('.shop__card')
+const cardsTitle = document.querySelectorAll('.card__title')
 const counters = document.querySelectorAll('.shop__value');
 const notFound = document.querySelector('.shop__notfound');
+const cardsImage = document.querySelectorAll('.card__image');
 
 buttonsShop.forEach((element, index) => {
     element.addEventListener('click', (e) => {
@@ -14,6 +15,8 @@ buttonsShop.forEach((element, index) => {
 
     })
 })
+
+
 
 buttonsShop.forEach((e) => {
     e.addEventListener('click', () => {
@@ -44,3 +47,8 @@ buttonsShop.forEach((e) => {
     })
 })
 
+cardsImage.forEach((element) => {
+    element.addEventListener('click', () => {
+        location.href = 'one_item.html'
+    })
+})

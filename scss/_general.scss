@@ -5,3 +5,28 @@
     text-align: left;
     color: #000;
 }
+
+.breadcrumbs {
+    display: flex;
+    padding: 0;
+
+    li {
+        &:first-child {
+            &::before {
+                display: none;
+            }
+        }
+
+
+
+        &:last-child {
+            color: $second-accent;
+        }
+
+        &::before {
+            content: '—';
+            margin: 0 5px 0 10px;
+            color: #000;
+        }
+    }
+}

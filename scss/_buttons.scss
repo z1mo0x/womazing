@@ -9,6 +9,7 @@
     align-items: center;
     justify-content: center;
     transition: all .5s ease;
+    cursor: pointer;
 
     &:hover {
         background: #509498;
@@ -90,4 +91,21 @@
 .active-categories {
     background: black;
     color: white;
+}
+
+.button-color {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: #927876;
+    margin-right: 15px;
+    opacity: 0.95;
+
+    &:last-child {
+        margin: 0;
+    }
+}
+
+.color-active {
+    border: 1px solid #000;
 }
