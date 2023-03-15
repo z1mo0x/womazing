@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WOOMAZING</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="header__wrapper container flex justify-between items-center">
+            <div class="header__logo"><img src="img/header/logo.png" alt=""> <img src="img/header/Womazing.png" alt="">
+            </div>
+            <div class="header__burger hidden">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul class="header__burger-list hidden">
+                <li><a href="#">Главная</a></li>
+                <li><a href="shop.html">Магазин</a></li>
+                <li><a href="blog.html">О бренде</a></li>
+                <li><a href="#">Контакты</a></li>
+            </ul>
+            <ul class="header__list">
+                <li><a href="#" class="active">Главная</a></li>
+                <li><a href="shop.html">Магазин</a></li>
+                <li><a href="#">О бренде</a></li>
+                <li><a href="#">Контакты</a></li>
+            </ul>
+            <div class="header__phone"><a href="">
+                    <img src="img/header/phone.svg" alt="">
+                </a>
+                +7 (495) 823-54-12</div>
+            <div class="header__cart"><a href=""><img src="img/header/cart.svg" alt=""></a></div>
+        </div>
+    </header>
+
+    <section class="feedback">
+        <div class="container">
+            <div class="title feedback__title">
+                Контакты
+            </div>
+            <ul class="breadcrumbs feedback__breadcrumbs">
+                <li>Главная</li>
+                <li>Контакты</li>
+            </ul>
+            <div class="feedback__map">
+                <iframe
+                    src="https://yandex.ru/map-widget/v1/?um=constructor%3A8b7f667e3e0208fc2754104a8ebf180eb6c7dad515b79536160226ce10f2bca0&amp;source=constructor"
+                    frameborder="0"></iframe>
+            </div>
+            <div class="feedback__info">
+                <ul class="feedback__phone">
+                    <li>Телефон</li>
+                    <li>+7 (495) 823-54-12</li>
+                </ul>
+                <ul class="feedback__mail">
+                    <li>E-mail</li>
+                    <li>info@sitename.com</li>
+                </ul>
+                <ul class="feedback__address">
+                    <li>Адрес</li>
+                    <li>г. Москва, 3-я улица Строителей, 25</li>
+                </ul>
+            </div>
+
+            <div class="feedback__form form">
+                <div class="form__title">Напишите нам</div>
+                <input type="text" class="form__element" placeholder="Имя">
+                <input type="email" class="form__element" placeholder="E-mail">
+                <input type="tel" class="form__element" placeholder="Телефон">
+                <textarea name="" placeholder="Сообщение" class="form__element" id=""></textarea>
+                <button class="button" type="submit">Отправить</button>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container footer__wrapper">
+            <div class="footer__politics">
+                <div class="footer__logo flex items-center ">
+                    <img src="img/header/logo.png" alt="">
+                    <img class="ml-4" src="img/header/Womazing.png" alt="">
+                </div>
+                <div class="footer__rules">
+                    <div class="footer__copyright"><a href=""> © Все права защищены</a></div>
+                    <div class="footer__confidential"><a href=""> Политика конфиденциальности</a></div>
+                    <div class="footer__public"><a href="">Публичная оферта</a></div>
+                </div>
+
+            </div>
+            <nav class="footer__nav">
+                <ul class="footer__header">
+                    <li><a href="#" class="active">Главная</a></li>
+                    <li><a href="shop.html">Магазин</a>
+                        <ul class="footer__categories">
+                            <li><a href="#">Пальто</a></li>
+                            <li><a href="#">Свитшоты</a></li>
+                            <li><a href="#">Кардиганы</a></li>
+                            <li><a href="#">Толстовки</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">О бренде</a></li>
+                    <li><a href="#">Контакты</a></li>
+
+
+                </ul>
+            </nav>
+            <div class="footer__info">
+                <div class="footer__phone">+7 (495) 823-54-12</div>
+                <div class="footer__email">hello@womazing.com</div>
+                <div class="footer__socials">
+                    <a href=""> <img class="footer__social" src="img/footer/inst.png"></a>
+                    <a href=""><img class="footer__social" src="img/footer/face.png"></a>
+                    <a href=""><img class="footer__social" src="img/footer/twitter.png"></a>
+                </div>
+                <a href=""><img class="footer__visa" src="img/footer/visa.png"></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/header.js"></script>
+    <script src="js/burger.js"></script>
+</body>
+
+</html>

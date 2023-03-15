@@ -1,0 +1,56 @@
+@media (max-width:826px) {
+
+    .about {
+        padding-left: 30px;
+        padding-right: 30px;
+
+        &__subtitle {
+            font-size: 22px;
+        }
+
+        &__text {
+            font-size: 15px;
+        }
+
+        &__wrapper {
+            width: 60%;
+
+            &:nth-child(even) {
+                margin-left: 30px;
+            }
+
+            &:nth-child(odd) {
+                margin-right: 30px;
+            }
+        }
+    }
+}
+
+@media (max-width:578px) {
+    .about {
+        padding-left: 15px;
+        padding-right: 15px;
+
+        &__image {
+            width: 100%;
+        }
+
+        &__subtitle {
+            margin-top: 15px;
+        }
+
+        &__text {
+            margin-bottom: 15px;
+        }
+
+        &__wrapper {
+            margin: 0 !important;
+            width: 100%;
+            text-align: justify;
+        }
+
+        &__block {
+            flex-direction: column;
+        }
+    }
+}

@@ -587,14 +587,6 @@ video {
   width: 66.666667%;
 }
 
-.w-2\/4 {
-  width: 50%;
-}
-
-.w-2\/6 {
-  width: 33.333333%;
-}
-
 .flex-wrap {
   flex-wrap: wrap;
 }
@@ -615,9 +607,8 @@ video {
   justify-content: space-between;
 }
 
-.bg-gray-500 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(107 114 128 / var(--tw-bg-opacity));
+.self-center {
+  align-self: center;
 }
 
 .text-center {

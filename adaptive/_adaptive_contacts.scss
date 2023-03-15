@@ -1,0 +1,33 @@
+@media (max-width:826px) {
+    .feedback {
+        display: flex;
+        justify-content: center;
+
+        &__info {
+            flex-direction: column;
+            margin: 25px auto 0;
+            text-align: center;
+
+            ul {
+                font-size: 20px;
+                margin: 0;
+                margin-top: 25px;
+            }
+        }
+
+        &__form {
+            align-items: center;
+        }
+    }
+}
+
+@media (max-width:578px) {
+    .feedback {
+        &__form {
+            .form__element {
+                width: 300px;
+            }
+
+        }
+    }
+}
