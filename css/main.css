@@ -583,10 +583,6 @@ video {
   width: 100%;
 }
 
-.w-2\/3 {
-  width: 66.666667%;
-}
-
 .flex-wrap {
   flex-wrap: wrap;
 }
@@ -605,10 +601,6 @@ video {
 
 .justify-between {
   justify-content: space-between;
-}
-
-.self-center {
-  align-self: center;
 }
 
 .text-center {
