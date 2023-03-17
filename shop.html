@@ -43,7 +43,31 @@
             <div class="header__cart"><a href=""><img src="img/header/cart.svg" alt=""></a></div>
         </div>
     </header>
+    <div class="overlay" id="#call">
+        <div class="popup">
+            <div class="popup__close"></div>
+            <div class="popup__title">Заказать обратный звонок</div>
+            <div class="popup__form">
+                <input type="text" id="name" class="form__element" placeholder="Имя">
+                <div id="nameError"></div>
+                <input type="email" id="email" class="form__element" placeholder="E-mail">
+                <div id="emailError"></div>
+                <input type="tel" id="telephone" class="form__element" placeholder="Телефон">
+                <div id="telephoneError"></div>
+                <button class="button popup__button" type="submit">Заказать звонок</button>
 
+            </div>
+        </div>
+    </div>
+    <div class="overlay" id="#thanks">
+        <div class="popup">
+            <div class="popup__close"></div>
+            <div class="popup__title">Отлично! Мы скоро вам перезвоним.</div>
+            <div class="popup__form">
+                <button class="button-transparent popup__button">Закрыть</button>
+            </div>
+        </div>
+    </div>
     <main>
         <section class="shop">
             <div class="container">
@@ -216,6 +240,7 @@
     <script src="js/header.js"></script>
     <script src="js/tabs.js"></script>
     <script src="js/burger.js"></script>
+    <script src="js/popup.js"></script>
 </body>
 
 </html>

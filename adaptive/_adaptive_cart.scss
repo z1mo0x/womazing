@@ -1,0 +1,156 @@
+@media (max-width:1250px) {
+    .cart {
+        &__clear {
+            margin-top: 30px;
+        }
+
+        &__total {
+            .button {
+                width: 200px;
+            }
+
+            div {
+                width: 200px;
+                font-size: 18px;
+                padding: 15px 10px;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+            }
+        }
+    }
+
+    .item {
+        &__count {
+            input {
+                width: 50px;
+                height: 50px;
+            }
+        }
+    }
+}
+
+@media (max-width:1100px) {
+    .cart {
+
+        &__total {
+
+            div {
+                font-size: 18px;
+                padding: 15px 10px;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+            }
+        }
+
+        &__offer-block {
+            width: 100%;
+        }
+    }
+}
+
+@media (max-width:826px) {
+    .cart {
+        padding: 200px 10px 0;
+
+        &__header {
+            font-size: 16px;
+        }
+
+        .form__element {
+            width: 250px;
+        }
+
+        &__coupon {
+            flex-direction: column;
+            align-items: center;
+
+            .button {
+                margin-top: 30px;
+            }
+        }
+    }
+
+    .item {
+
+        &__price,
+        &__sum {
+            font-size: 15px;
+        }
+
+        &__image {
+            img {
+                width: 90%;
+            }
+        }
+
+        &__count {
+            input {
+                width: 40px;
+                height: 40px;
+            }
+        }
+
+        &__title {
+            font-size: 14px;
+            text-align: center;
+        }
+    }
+}
+
+@media (max-width:579px) {
+    .item {
+
+        &__intro {
+            flex-direction: column;
+        }
+
+
+        &__delete {
+            margin: 0;
+        }
+
+        &__image {
+            img {
+                width: 100%;
+            }
+        }
+
+        &__count {
+            input {
+                width: 30px;
+                height: 30px;
+                font-size: 14px;
+            }
+        }
+
+    }
+
+    .cart {
+        &__header {
+            font-size: 11px;
+        }
+
+        &__product {
+            width: 40%;
+        }
+
+        &__actions {
+            flex-direction: column;
+            align-items: center;
+
+            .button {
+                margin-left: 0;
+            }
+        }
+
+        &__clear {
+            order: 1;
+        }
+
+        &__coupon {
+            order: 2;
+        }
+    }
+}

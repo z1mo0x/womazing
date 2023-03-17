@@ -36,10 +36,12 @@
                 <li><a href="blog.html">О бренде</a></li>
                 <li><a href="contacts.html">Контакты</a></li>
             </ul>
-            <div class="header__phone"><a href="">
+            <div class="header__phone">
+                <a href="">
                     <img src="img/header/phone.svg" alt="">
                 </a>
-                +7 (495) 823-54-12</div>
+                +7 (495) 823-54-12
+            </div>
             <div class="header__cart"><a href=""><img src="img/header/cart.svg" alt=""></a></div>
         </div>
     </header>
@@ -68,91 +70,60 @@
             </div>
         </div>
     </div>
-    <main>
-        <section class="product">
-            <div class="container">
-                <div class="product__title title">Свитшот Sweet Shot</div>
-                <ul class="product__breadcrumps breadcrumbs">
-                    <li><a href="">Главная</a></li>
-                    <li><a href="">Свитшоты</a></li>
-                    <li><a href="">Свитшот Sweet Shot</a></li>
-                </ul>
-                <div class="product__block flex justify-start">
-                    <div class="product__image w-1/3">
-                        <img src="img/new/proruct.png" alt="">
-                    </div>
-                    <div class="product__settings w-1/3">
-                        <div class="product__prices">
-                            <div class="product__price">$311</div>
-                            <div class="product__oldprice">$450</div>
-                        </div>
-                        <div class="product__size">Выберите размер
-                            <div class="product__sizes">
-                                <button class="button-categories product__button" value="S">
-                                    S
-                                </button>
-                                <button value="M" class="button-categories active-categories product__button">
-                                    M
-                                </button>
-                                <button value="L" class="button-categories product__button">
-                                    L
-                                </button>
-                                <button value="XL" class="button-categories product__button">
-                                    XL
-                                </button>
-                                <button value="XXL" class="button-categories product__button">
-                                    XXL
-                                </button>
-                            </div>
-                        </div>
-                        <div class="product__color">Выберите цвет
-                            <div class="product__colors">
-                                <button value="brown" class="button-color"></button>
-                                <button value="grey" class="button-color color-active grey"></button>
-                                <button value="pink" class="button-color pink"></button>
-                                <button value="sand" class="button-color sand"></button>
-                            </div>
-                        </div>
-                        <div class="product__cart">
-                            <div class="product__count">
-                                <input type="number" max="5" min="1" value="1">
-                            </div>
-                            <div class="button button-cart">Добавить в корзину</div>
-                        </div>
-                    </div>
+
+    <section class="cart">
+        <div class="container">
+            <div class="cart__title title">Корзина</div>
+            <ul class="cart__breadcrumbs breadcrumbs">
+                <li>Главная</li>
+                <li>Корзина</li>
+            </ul>
+            <div class="cart__header">
+                <div class="cart__product">Товар</div>
+                <div class="cart__price">Цена</div>
+                <div class="cart__count">Количество</div>
+                <div class="cart__all">Всего</div>
+            </div>
+            <hr>
+            <div class="cart__item item">
+                <div class="item__intro">
+                    <div class="item__delete">&times;</div>
+                    <div class="item__image"><img src="img/new/product_1.png" alt=""></div>
+                    <div class="item__title">Футболка USA</div>
+                </div>
+
+                <div class="item__price">$129</div>
+                <div class="item__count">
+                    <input type="number" value="1">
+                </div>
+                <div class="item__sum">$129</div>
+            </div>
+
+            <div class="cart__actions">
+                <div class="cart__coupon">
+                    <input type="text" class="form__element" placeholder="Введите купон">
+                    <button class="button button-transparent">Применить купон</button>
+                </div>
+                <div class="cart__clear">
+                    <div class="button button-transparent">Обновить корзину</div>
                 </div>
             </div>
-        </section>
-        <section class="same">
-            <div class="container">
-                <div class="same__title title">Связанные товары</div>
-                <div class="same__cards flex justify-start">
-                    <div class="w-1/3 same__card card">
-                        <div class="card__image">
-                            <img src="img/new/product_1.png" alt="">
-                        </div>
-                        <div class="card__title">Футболка USA</div>
-                        <div class="card__prices">
-                            <div class="card__oldprice">$229</div>
-                            <div class="card__price">$129</div>
+            <div class="cart__offer">
+                <div class="cart__offer-block">
+                    <div class="font-medium">Подытог: $129</div>
+                    <div class="cart__total">
+                        <div>
+                            <span>Итого:</span>
+                            <span class="ml-6"> $129</span>
                         </div>
 
-                    </div>
-                    <div class="w-1/3 same__card card">
-                        <div class="card__image">
-                            <img src="img/new/product_2.png" alt="">
-                        </div>
-                        <div class="card__title">Купальник Glow</div>
-                        <div class="card__prices">
-                            <div class="card__price">$129</div>
-                        </div>
+                        <button class="button">Оформить заказ</button>
                     </div>
                 </div>
+
             </div>
-        </section>
-    </main>
-
-
+        </div>
+    </section>
 
     <footer class="footer">
         <div class="container footer__wrapper">
@@ -170,17 +141,17 @@
             </div>
             <nav class="footer__nav">
                 <ul class="footer__header">
-                    <li><a href="" class="active">Главная</a></li>
+                    <li><a href="#" class="active">Главная</a></li>
                     <li><a href="shop.html">Магазин</a>
                         <ul class="footer__categories">
-                            <li><a href="">Пальто</a></li>
-                            <li><a href="">Свитшоты</a></li>
-                            <li><a href="">Кардиганы</a></li>
-                            <li><a href="">Толстовки</a></li>
+                            <li><a href="#">Пальто</a></li>
+                            <li><a href="#">Свитшоты</a></li>
+                            <li><a href="#">Кардиганы</a></li>
+                            <li><a href="#">Толстовки</a></li>
                         </ul>
                     </li>
-                    <li><a href="">О бренде</a></li>
-                    <li><a href="">Контакты</a></li>
+                    <li><a href="#">О бренде</a></li>
+                    <li><a href="#">Контакты</a></li>
 
 
                 </ul>
@@ -201,7 +172,6 @@
 
     <script src="js/header.js"></script>
     <script src="js/burger.js"></script>
-    <script src="js/oneItem.js"></script>
     <script src="js/popup.js"></script>
 </body>
 

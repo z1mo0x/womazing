@@ -551,6 +551,18 @@ video {
   margin-top: 3.5rem;
 }
 
+.ml-5 {
+  margin-left: 1.25rem;
+}
+
+.ml-32 {
+  margin-left: 8rem;
+}
+
+.ml-6 {
+  margin-left: 1.5rem;
+}
+
 .\!block {
   display: block !important;
 }
@@ -610,6 +622,10 @@ video {
 .text-6xl {
   font-size: 3.75rem;
   line-height: 1;
+}
+
+.font-medium {
+  font-weight: 500;
 }
 
 .text-red-600 {

@@ -36,53 +36,82 @@
                 <li><a href="blog.html">О бренде</a></li>
                 <li><a href="contacts.html">Контакты</a></li>
             </ul>
-            <div class="header__phone"><a href="">
+            <div class="header__phone">
+                <a href="">
                     <img src="img/header/phone.svg" alt="">
                 </a>
-                +7 (495) 823-54-12</div>
+                +7 (495) 823-54-12
+            </div>
             <div class="header__cart"><a href=""><img src="img/header/cart.svg" alt=""></a></div>
         </div>
     </header>
-    <section class="hero">
-        <div class="hero__brown"></div>
-        <div class="hero__wrapper container flex">
-            <div class="hero__block w-1/2">
-                <h2 class="hero__title">Новые поступления
-                    в этом сезоне</h2>
-                <div class="hero__descr">
-                    Утонченные сочетания и бархатные оттенки - вот то, что вы искали в этом сезоне. Время исследовать.
-                </div>
-                <div class="hero__buttons">
-                    <button class="button-arrow button hero__button">
-                        <img src="img/header/button_arrow.svg" alt="">
-                    </button>
-                    <button class="button hero__button">Открыть магазин</button>
-                </div>
-                <div class="hero__dots">
-                    <span onclick="currentSlide(1)"></span>
-                    <span onclick="currentSlide(2)" class="active_dot"></span>
-                    <span onclick="currentSlide(3)"></span>
-                </div>
-            </div>
-            <div class="hero__slider w-1/2">
-                <div class="slider__container">
-                    <img class="hero__left" src="img/header/photo_1.png" alt="">
-                    <img class="hero__right" src="img/header/photo_3.png" alt="">
-                    <div class="mySlide">
-                        <img src="img/header/slide1.jpg" alt="">
-                    </div>
-                    <div class="mySlide">
-                        <img src="img/header/photo_2.png" alt="">
-                    </div>
-                    <div class="mySlide">
-                        <img src="img/header/slide3.jpg" alt="">
-                    </div>
-                </div>
+    <div class="overlay" id="#call">
+        <div class="popup">
+            <div class="popup__close"></div>
+            <div class="popup__title">Заказать обратный звонок</div>
+            <div class="popup__form">
+                <input type="text" id="name" class="form__element" placeholder="Имя">
+                <div id="nameError"></div>
+                <input type="email" id="email" class="form__element" placeholder="E-mail">
+                <div id="emailError"></div>
+                <input type="tel" id="telephone" class="form__element" placeholder="Телефон">
+                <div id="telephoneError"></div>
+                <button class="button popup__button" type="submit">Заказать звонок</button>
+
             </div>
         </div>
-    </section>
-
+    </div>
+    <div class="overlay" id="#thanks">
+        <div class="popup">
+            <div class="popup__close"></div>
+            <div class="popup__title">Отлично! Мы скоро вам перезвоним.</div>
+            <div class="popup__form">
+                <button class="button-transparent popup__button">Закрыть</button>
+            </div>
+        </div>
+    </div>
     <main>
+        <section class="hero">
+            <div class="hero__brown"></div>
+            <div class="hero__wrapper container flex">
+                <div class="hero__block w-1/2">
+                    <h2 class="hero__title">Новые поступления
+                        в этом сезоне</h2>
+                    <div class="hero__descr">
+                        Утонченные сочетания и бархатные оттенки - вот то, что вы искали в этом сезоне. Время
+                        исследовать.
+                    </div>
+                    <div class="hero__buttons">
+                        <button class="button-arrow button hero__button">
+                            <img src="img/header/button_arrow.svg" alt="">
+                        </button>
+                        <button class="button hero__button">Открыть магазин</button>
+                    </div>
+                    <div class="hero__dots">
+                        <span onclick="currentSlide(1)"></span>
+                        <span onclick="currentSlide(2)" class="active_dot"></span>
+                        <span onclick="currentSlide(3)"></span>
+                    </div>
+                </div>
+                <div class="hero__slider w-1/2">
+                    <div class="slider__container">
+                        <img class="hero__left" src="img/header/photo_1.png" alt="">
+                        <img class="hero__right" src="img/header/photo_3.png" alt="">
+                        <div class="mySlide">
+                            <img src="img/header/slide1.jpg" alt="">
+                        </div>
+                        <div class="mySlide">
+                            <img src="img/header/photo_2.png" alt="">
+                        </div>
+                        <div class="mySlide">
+                            <img src="img/header/slide3.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
         <section class="new">
             <div class="container">
                 <div class="new__title title">Новая коллекция</div>
@@ -255,6 +284,7 @@
     <script src="js/slider-2.js"></script>
     <script src="js/header.js"></script>
     <script src="js/burger.js"></script>
+    <script src="js/popup.js"></script>
 </body>
 
 </html>
